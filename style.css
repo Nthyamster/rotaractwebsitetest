@@ -14,6 +14,11 @@ body {
     flex-direction: column;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 header h1 {
     font-size: 3em;
@@ -22,6 +27,10 @@ header h1 {
 }
 
 
+.logo {
+    max-width: 200px; 
+    margin-bottom: 15px; 
+}
 .buttons {
     display: flex;
     gap: 20px;
@@ -29,7 +38,7 @@ header h1 {
 
 .button {
     padding: 15px 30px;
-    background-color: #800020;
+    background-color: #800020; 
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -39,4 +48,148 @@ header h1 {
 
 .button:hover {
     background-color: #4d0014; 
+}
+/* Events Section Styling */
+.event-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.event {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0e6e6;
+}
+
+.event h2 {
+    font-size: 2em;
+    color: #800020; /* Burgundy color for event titles */
+}
+
+.event p {
+    margin: 10px 0;
+}
+
+.event strong {
+    color: #333; /* Dark color for strong text */
+}
+/* Style the about section */
+.about-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+/* Contact Section Styling */
+.contact-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Contact Person Section */
+.contact-person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-info h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #800020; /* Burgundy color for the name */
+}
+
+.person-info p {
+    margin: 5px 0;
+    color: #333; /* Dark text */
+}
+
+/* Contact Details Styling */
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details strong {
+    color: #800020; /* Burgundy color for labels */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333; /* Dark color for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #800020; /* Burgundy border on focus */
+    outline: none;
+}
+
+.submit-button {
+    padding: 15px 30px;
+    background-color: #800020; /* Burgundy button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #4d0014; /* Darker burgundy on hover */
 }
